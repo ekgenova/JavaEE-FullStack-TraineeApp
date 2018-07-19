@@ -29,7 +29,7 @@ public class TraineeDBRepository implements ITraineeRepository{
 
 	public String getAllTrainees() {
 		LOGGER.info("In TraineeDBRepository getAllTrainees");
-		TypedQuery<Trainee> query = manager.createQuery("SELECT a FROM Account a", Trainee.class); 
+		TypedQuery<Trainee> query = manager.createQuery("SELECT a FROM Trainee a", Trainee.class); 
 		return util.getJSONForObject(query.getResultList());
 	}
 

@@ -26,7 +26,7 @@ public class Trainee {
 	@Size(min=2, max=50)
 	private String secondName;
 	@JoinColumn(name = "trainee_id")
-	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	private List<Subject> subjects;
 		
 	public Trainee() {
