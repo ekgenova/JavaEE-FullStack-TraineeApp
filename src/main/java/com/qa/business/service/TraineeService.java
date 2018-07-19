@@ -20,17 +20,17 @@ public class TraineeService implements ITraineeService {
 
 	public String addTrainee(String trainee) {
 		LOGGER.info("In TraineeService addTrainee");
-		return repo.addTrainee();
+		return repo.addTrainee(trainee);
 	}
 
 	public String updateTrainee(Long id, String trainee) {
 		LOGGER.info("In TraineeService updateTrainee");
-		return repo.updateTrainee();
+		return repo.updateTrainee(id, trainee);
 	}
 
 	public String deleteTrainee(Long id) {
 		LOGGER.info("In TraineeService deleteTrainee");
-		return repo.deleteTrainee();
+		return repo.deleteTrainee(id);
 	}
 	
 	public void setRepo(ITraineeRepository repo) {

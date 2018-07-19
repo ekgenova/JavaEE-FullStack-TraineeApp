@@ -62,4 +62,12 @@ public class Trainee {
 	public void setSubjects(List<Subject> subjects) {
 		this.subjects = subjects;
 	}
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 }
