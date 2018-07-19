@@ -13,6 +13,7 @@ import javax.transaction.Transactional;
 import org.apache.log4j.Logger;
 
 import com.qa.persistence.domain.Trainee;
+import com.qa.util.JSONUtil;
 
 @Transactional(SUPPORTS)
 @Default
