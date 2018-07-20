@@ -12,13 +12,13 @@ public class Subject {
 	@Id
 	private Long id;
 	private String subjectName;
-	private int subjectScore;
+	private String subjectScore;
 	
 	public Subject() {
 		
 	}
 	
-	public Subject(String subjectName, int subjectScore) {
+	public Subject(String subjectName, String subjectScore) {
 		this.subjectName = subjectName;
 		this.subjectScore = subjectScore;
 	}
@@ -31,11 +31,11 @@ public class Subject {
 		this.subjectName = subjectName;
 	}
 
-	public int getSubjectScore() {
+	public String getSubjectScore() {
 		return subjectScore;
 	}
 
-	public void setSubjectScore(int subjectScore) {
+	public void setSubjectScore(String subjectScore) {
 		this.subjectScore = subjectScore;
 	}
 }
