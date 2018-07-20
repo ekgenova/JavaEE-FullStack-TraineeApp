@@ -1,0 +1,21 @@
+<div ng-controller="traineeController as traineeCtrl">
+    <br>
+    <h1 align="center">Further details</h1>
+    <h3>Name: {{traineeCtrl.selectedTrainee.firstName}}</h3>
+    <br>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody ng-repeat="subject in traineeCtrl.selectedTrainee.subjects">
+        <tr>
+            <th>{{subject.subjectName}}</th>
+            <th>{{subject.subjectScore}}</th>
+        </tr>
+        </tbody>
+    </table>
+    <button type="button" ui-sref="trainees">Back</button>
+</div>
