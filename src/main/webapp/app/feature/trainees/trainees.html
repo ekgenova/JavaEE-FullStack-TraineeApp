@@ -1,0 +1,24 @@
+<div class="panel panel-default" ng-controller="traineeController as traineeCtrl">
+    <div class="panel-heading">Trainees page</div>
+    <div class="panel-body">
+        <div ng-hide="traineeCtrl.isHidden">
+            <h3><span>Trainees table</span></h3>
+            <table width = "800">
+                <thead>
+                <tr>
+                    <th>{{'first_name' | uppercase}}</th>
+                    <th>{{'surname' | uppercase}}</th>
+                </tr>
+                </thead>
+                <tbody ng-repeat="trainee in traineeCtrl.trainees">
+                <tr>
+                    <td>{{trainee.firstName}}</td>
+                    <td>{{trainee.secondName}}</td>
+                    <td><button class="btn" ng-click="traineeCtrl.passTrainee(trainee);">More</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="btn" ng-click="traineeCtrl.hideTable()">Hide accounts</button>
+    </div>
+</div>
